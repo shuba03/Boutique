@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D swipe Slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-1.jpg">
+                </div>
+                <div class="details">
+                  <h3>Grass<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-2.jpg">
+                </div>
+                <div class="details">
+                  <h3>Dawn<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-3.jpg">
+                </div>
+                <div class="details">
+                  <h3>Mountain<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-4.jpg">
+                </div>
+                <div class="details">
+                  <h3>Autumn<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-5.jpg">
+                </div>
+                <div class="details">
+                  <h3>Beach<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-6.jpg">
+                </div>
+                <div class="details">
+                  <h3>Flower<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-7.jpg">
+                </div>
+                <div class="details">
+                  <h3>Orchid<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-8.jpg">
+                </div>
+                <div class="details">
+                  <h3>Tree<br><span>Nature</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="nature-9.jpg">
+                </div>
+                <div class="details">
+                  <h3>Water<br><span>Nature</span></h3>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script> 
+            var swiper = new Swiper('.swiper-container', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                rotate: 60,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
+    </body>
+</html>
